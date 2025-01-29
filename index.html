@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container-titulo">
+        <h1> ! Descubre tu amigo secreto !</h1>
+    </section>
+    <section class="container-principal">
+        <div class="container-subtitulo">
+            <img src="img/svg/secret.svg" alt="secret-person">
+        </div>
+        <div class="container-form">
+            <form>
+                <input type="text" name="nombre" id="nombre-input" placeholder="Nombre del participante...">
+                <button class="btn-agregar-amigo" onclick="agregarAmigo(event)"></button>
+            </form>
+            <p class="mensaje-error"></p>
+        </div>
+        <div class="container-lista-amigos">
+            <ul class="lista-amigos">
+            </ul>
+
+            <h2 class="amigo-secreto"></h2>
+        </div>
+        <div class="container-buttons">
+            <button onclick="generarSorteo()" class="btn-sortear"> <img src="img/svg/sorteo.svg" alt="sorteo">Realizar
+                Sorteo</button>
+            <button onclick="reiniciarSorteo()" class="btn-reiniciar"> <img src="img/svg/reset.svg"
+                    alt="reiniciar">Reiniciar</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
